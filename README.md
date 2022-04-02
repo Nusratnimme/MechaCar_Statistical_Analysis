@@ -21,7 +21,7 @@ _Ground clearance vs MPG_
 
 ![clearncVSmpg](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/mpg%20vs%20ground_clearance.png)
 
-Multiple linear regression model was fitted to predict the mpg of Mechacar prototypes. The dependent variables can be seen in the image below.
+Multiple linear regression model was fitted to predict the mpg of Mechacar prototypes. The independent variables can be seen in the image below.
 
 ![MechaCar_png](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/MechaCar_mpg.png)
 
@@ -35,7 +35,7 @@ The **summary()** function returns below statistics which measure the overall fi
 
 - It should be noted that the **intercept** of the fitted model is also statistically significant. However, considering practical scenario, we can ignore it (the intercept estimates mpg of a vehicle with zero length, weight, etc. and is of no practical use therefore). 
 
-- The R-squared statistic for the fitted model is 0.71 meaning that roughly 71% of the variability of the mpg can be explained by the model which is overall statistically significant (p-value of **5.35e-11**).
+- The R-squared statistic for the fitted model is 0.71 meaning that roughly **71% of the variability of the mpg can be explained by the model** which is overall statistically significant (p-value of **5.35e-11**).
 
 From the above results, it can be said that the model did a fairly good job in predicting the mpg of MechaCar prototypes. 
 
@@ -71,12 +71,12 @@ _Lot-3_
 ![Lot3_t.test](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/Lot3_t.test.png)
 
 ## Study Design: MechaCar vs Competition
-- MechaCar needs to meet consumers' expectation on number of factors compared to its competitiors to win the market. These will include **objective criteria** such as price, MPG, horse power, safety ratings; **future performance criteria** such as maintenance cost, and more **subjective criteria** such as aesthetics and design. We have data on vehicle length, weight, ground clearance and whether they are AWD but these things are individual preferences rather than universally sought qualities such as MPG.
+- MechaCar needs to meet consumers' expectation on number of factors compared to its competitiors to win the market. These will include **objective criteria** such as price, MPG, horse power, safety ratings; **future performance criteria** such as maintenance cost; and more **subjective criteria** such as aesthetics and design. We have data on vehicle length, weight, ground clearance and whether they are AWD but these things are individual preferences rather than universally sought qualities such as MPG.
 
 - Since buyers are likely to decide first what _type_ of vehicle they want to purchase before choosing a brand, we need to **compare MechaCar varieties with their peers**. This means that we need to create categories of vehicles with more or less same length, rows and design classes (sedan, SUV, van, etc.), AWD (binary), horse power and then compare how MechaCar fares in terms of price, MPG, safety ratings etc. compared to its competitors.
 
 - Our null hypotheses in these cases will be of the form **H0: MechaCar's true mean of performance criterion is equal to or worse than competitor's mean**. For example, H0: MechaCar's mean price is same or higher than paired competitor's mean. If our data allows us to **reject** this hypothesis, we can say that **MechaCar is performing better in that particular criterion** compared to its competitor. 
 
-- The ideal statistic for this task are a series of **paired t-test** where we test how MechaCar performs compared to its _paired_ competitors. For example, for a MechaCar-Competitor paired sample on length, rows and design classes (sedan, SUV, van, etc.), AWD (binary), horse power, etc., are MechaCars cheaper than the mean price of competitor's cars?
+- The ideal statistic for this task is a series of **paired t-test** where we test how MechaCar performs compared to its _paired_ competitors. For example, for a MechaCar-Competitor paired sample on length, rows and design classes (sedan, SUV, van, etc.), AWD (binary), horse power, etc., are MechaCars cheaper than the mean price of competitor's cars?
 
 - To conduct this analyses, we will need a dataset containing all variables for **pairing** (length, rows and design classes, AWD, horse power), and those for **comparing** (price, MPG, safety ratings). Also, our dataset needs to have enough records for each paired sample.
