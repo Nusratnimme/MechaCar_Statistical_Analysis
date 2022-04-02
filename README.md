@@ -11,8 +11,16 @@ The purposes of the analyses are:
 - to conduct t-tests to determine if the manufacturing lots are statistically different from the mean population.
 
 ## Linear Regression to Predict MPG
+An initial visual inspection using scatter plots suggest some **positive correlation between mpg and vehicle length as well as ground clearnce**.
 
-![ground_clearanceVSmpg](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/mpg%20vs%20ground_clearance.png)
+_Vehicle length vs MPG_
+
+![lengthVSmpg](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/mpg%20vs%20vehicle_length.png)
+
+_Ground clearance vs MPG_
+
+![clearncVSmpg](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/mpg%20vs%20ground_clearance.png)
+
 Multiple linear regression model was fitted to predict the mpg of Mechacar prototypes. The dependent variables can be seen in the image below.
 
 ![MechaCar_png](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/MechaCar_mpg.png)
