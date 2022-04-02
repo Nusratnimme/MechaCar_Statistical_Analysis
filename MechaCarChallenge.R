@@ -15,7 +15,7 @@ plt + geom_point()
 plt <- ggplot(MechaCar_mpg,aes(x=ground_clearance,y=mpg))
 plt + geom_point()
 
-# Deloiverable 2 : Create Visualizations for the Trip Analysis
+# Deloiverable 2: Create Visualizations for the Trip Analysis
 
 suspension_coil <- read.csv('./Resources/Suspension_Coil.csv',stringsAsFactors = F)
 
@@ -23,7 +23,17 @@ total_summary <- suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI
 
 lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 
+# Deliverable 3: T-Tests on Suspension Coils
 
+# t.test for all manufacturing lots
+t.test(suspension_coil$PSI ,mu= 1500)
+
+# t.test for individual lots
+t.test(subset(suspension_coil, Manufacturing_Lot=="Lot1")$PSI, mu= 1500)
+
+t.test(subset(suspension_coil, Manufacturing_Lot=="Lot2")$PSI, mu= 1500)
+
+t.test(subset(suspension_coil, Manufacturing_Lot=="Lot3")$PSI, mu= 1500)
 
 
 
