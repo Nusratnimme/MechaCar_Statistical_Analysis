@@ -70,3 +70,13 @@ _Lot-2_
 _Lot-3_
 ![Lot3_t.test](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/Lot3_t.test.png)
 
+## Study Design: MechaCar vs Competition
+- MechaCar needs to meet consumers' expectation on number of factors compared to its competitiors to win the market. These will include **objective criteria** such as price, MPG, horse power, safety ratings; **future performance criteria** such as maintenance cost, and more **subjective criteria** such as aesthetics and design. We have data on vehicle length, weight, ground clearance and whether they are AWD but these things are individual preferences rather than universally sought qualities such as MPG.
+
+- Since buyers are likely to decide first what _type_ of vehicle they want to purchase before choosing a brand, we need to **compare MechaCar varieties with their peers**. This means that we need to create categories of vehicles with more or less same length, rows and design classes (sedan, SUV, van, etc.), AWD (binary), horse power and then compare how MechaCar fares in terms of price, MPG, safety ratings etc. compared to its competitors.
+
+- Our null hypotheses in these cases will be of the form **H0: MechaCar's true mean of performance criterion is equal to or worse than competitor's mean**. For example, H0: MechaCar's mean price is same or higher than paired competitor's mean. If our data allows us to **reject** this hypothesis, we can say that **MechaCar is performing better in that particular criterion** compared to its competitor. 
+
+- The ideal statistic for this task are a series of **paired t-test** where we test how MechaCar performs compared to its _paired_ competitors. For example, for a MechaCar-Competitor paired sample on length, rows and design classes (sedan, SUV, van, etc.), AWD (binary), horse power, etc., are MechaCars cheaper than the mean price of competitor's cars?
+
+- To conduct this analyses, we will need a dataset containing all variables for **pairing** (length, rows and design classes, AWD, horse power), and those for **comparing** (price, MPG, safety ratings). Also, our dataset needs to have enough records for each paired sample.
