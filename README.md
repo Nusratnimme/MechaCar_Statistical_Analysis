@@ -21,4 +21,9 @@ From the above results, it can be said that the model does effectively predict t
 The current manufacturing data meet the design specification that dictate the variance of the suspension coils must not exceed 100 pounds per square inch(PSI) across all manfucaturing lots when they are calculated together. However, when calculating by individual manufacturing lots, lot 3 does not meet the design spefication because the variance is 170.29.
 
 Total summary table
-![Total_Summary]()
+
+![Total_Summary](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/Total_Summary.png)
+
+Lot summary table
+
+![Lot_summary](https://github.com/Nusratnimme/MechaCar_Statistical_Analysis/blob/main/Images/Lot_Summary.png)
