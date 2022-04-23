@@ -1,4 +1,4 @@
-# Analyses of MechaCar Prototype
+# Prediction of MPG of Car Prototype
 
 ## Purpose
 We have data on a number of varibles on AutosRUs' newest prototype, MechaCar. We have a:
